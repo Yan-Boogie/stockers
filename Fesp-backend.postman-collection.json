@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "d85d795e-04b9-4e9e-9813-ce8d0b38bb44",
+		"name": "Fesp backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/modules/userModules",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwicGFzc3dvcmQiOiIkMmIkMDgkVmVsVWguOTFSazM1aEllRVpKbE5PZUdMRkt4Z0ZXSzZ6T3lHY2lYcGI2T2huZUwySTdwUWkiLCJpYXQiOjE1NzIwMTA1NjIsImV4cCI6MTU3MjA5Njk2Mn0.lscgesgz2E_6u5wzs4mHDxmSWb2CBEQRmOFt5gyrYEk",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/modules/userModules",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modules",
+						"userModules"
+					]
+				},
+				"description": "need token\nneed userId"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/modules/getChips",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"chips\": [{\n\t\t\"parentName\": \"parent1\",\n\t\t\"chipName\": \"chip1\"\n\t},{\n\t\t\"parentName\": \"parent2\",\n\t\t\"chipName\": \"chip2\"\n\t}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/modules/getChips",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modules",
+						"getChips"
+					]
+				},
+				"description": "backend use to save chips data"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/modules/chips",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/modules/chips",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modules",
+						"chips"
+					]
+				},
+				"description": "get all chips"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/modules/updateModuleHeaderChips",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwicGFzc3dvcmQiOiIkMmIkMDgkVmVsVWguOTFSazM1aEllRVpKbE5PZUdMRkt4Z0ZXSzZ6T3lHY2lYcGI2T2huZUwySTdwUWkiLCJpYXQiOjE1NzIwMTA1NjIsImV4cCI6MTU3MjA5Njk2Mn0.lscgesgz2E_6u5wzs4mHDxmSWb2CBEQRmOFt5gyrYEk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"moduleId\" : 1,\n\t\"headerChips\": [{\n\t\t\"headerName\":\"testheader\",\n        \"moduleId\": 1,\n        \"parentName\": \"testparentname\",\n        \"columnId\": 2,\n        \"chipId\": 1\n\t},{\n\t\t\"headerName\":\"testheader2\",\n        \"moduleId\": 1,\n        \"parentName\": \"testparentname2\",\n        \"columnId\": 2,\n        \"chipId\": 2\n\t}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/modules/updateModuleHeaderChips",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modules",
+						"updateModuleHeaderChips"
+					]
+				},
+				"description": "need token and moduleId"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/modules/updateCommentInfo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwicGFzc3dvcmQiOiIkMmIkMDgkVmVsVWguOTFSazM1aEllRVpKbE5PZUdMRkt4Z0ZXSzZ6T3lHY2lYcGI2T2huZUwySTdwUWkiLCJpYXQiOjE1NzIwMTA1NjIsImV4cCI6MTU3MjA5Njk2Mn0.lscgesgz2E_6u5wzs4mHDxmSWb2CBEQRmOFt5gyrYEk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"moduleId\": 1,\n\t\"commentInfo\": {\n\t\t\"title\": \"this is test title\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/modules/updateCommentInfo",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modules",
+						"updateCommentInfo"
+					]
+				},
+				"description": "need token and moduleId"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/modules/updateMathModuleInfo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwicGFzc3dvcmQiOiIkMmIkMDgkVmVsVWguOTFSazM1aEllRVpKbE5PZUdMRkt4Z0ZXSzZ6T3lHY2lYcGI2T2huZUwySTdwUWkiLCJpYXQiOjE1NzIwMTA1NjIsImV4cCI6MTU3MjA5Njk2Mn0.lscgesgz2E_6u5wzs4mHDxmSWb2CBEQRmOFt5gyrYEk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"moduleId\": 1,\n\t\"mathModuleInfo\": {\n\t\t\"title\": \"this is math module\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/modules/updateMathModuleInfo",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modules",
+						"updateMathModuleInfo"
+					]
+				},
+				"description": "need token and moduleId"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/modules/updateUserModules",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwicGFzc3dvcmQiOiIkMmIkMDgkVmVsVWguOTFSazM1aEllRVpKbE5PZUdMRkt4Z0ZXSzZ6T3lHY2lYcGI2T2huZUwySTdwUWkiLCJpYXQiOjE1NzIwMTA1NjIsImV4cCI6MTU3MjA5Njk2Mn0.lscgesgz2E_6u5wzs4mHDxmSWb2CBEQRmOFt5gyrYEk",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"moduleId\": 2,\n        \"name\": \"first\",\n        \"subName\": \"fist\",\n        \"userId\": 1,\n        \"comment\": {\n            \"fdsafds\": \"fdsafds\"\n        },\n        \"usingStock\": [\n            {\n                \"fdsa\": \"dd\"\n            }\n        ],\n        \"mathModule\": {\n            \"fdsafds\": \"fdsafds\"\n        }\n    },\n    {\n        \"moduleId\": 1\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/modules/updateUserModules",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"modules",
+						"updateUserModules"
+					]
+				},
+				"description": "hoshen's route\nneed token\nand array of module"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
