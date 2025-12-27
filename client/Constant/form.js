@@ -1,0 +1,10 @@
+// @flow
+
+export const FORM_REGISTER = 'FORM/REGISTER';
+export const FORM_LOGIN = 'FORM/LOGIN';
+export const FORM_SITE_HEADER = 'FORM/SITE_HEADER';
+export const FORM_STRATEGY_COMMENT = 'FORM/STRATEGY_COMMENT';
+export const FORM_STRATEGY_HEADER = 'FORM/STRATEGY_HEADER';
+export const FORM_STOCK_SIMULATION = 'FORM/STOCK_SIMULATION';
+
+export default null;

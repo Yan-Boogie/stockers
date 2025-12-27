@@ -1,0 +1,294 @@
+// @flow
+
+export const comprehensiveIncomes = [{
+  id: 1,
+  name: '營業成本合計',
+}, {
+  id: 2,
+  name: '營業毛利（毛損）',
+}, {
+  id: 3,
+  name: '營業外收入及支出合計',
+}, {
+  id: 4,
+  name: '營業利益（損失）',
+}, {
+  id: 5,
+  name: '推銷費用合計',
+}, {
+  id: 6,
+  name: '管理費用合計',
+}, {
+  id: 7,
+  name: '繼續營業單位稅前淨利（淨損）',
+}, {
+  id: 8,
+  name: '母公司業主（淨利／損）',
+}, {
+  id: 9,
+  name: '基本每股盈餘合計',
+}];
+
+export const balanceSheets = [{
+  id: 1,
+  name: '現金及約當現金',
+  compareName: '現金及約當現金',
+  recentCompareName: '現金及約當現金合計',
+}, {
+  id: 2,
+  name: '應付帳款',
+  compareName: '應付帳款',
+  recentCompareName: '應付帳款合計',
+}, {
+  id: 3,
+  name: '存貨',
+  compareName: '存貨合計',
+  recentCompareName: '存貨',
+}, {
+  id: 4,
+  name: '長期資產',
+  compareName: '非流動資產合計',
+}, {
+  id: 5,
+  name: '流動資產',
+  compareName: '流動資產合計',
+}, {
+  id: 6,
+  name: '其他資產',
+  compareName: '其他流動資產',
+  recentCompareName: '其他流動資產合計',
+}, {
+  id: 7,
+  name: '短期借款',
+  compareName: '短期借款合計',
+  recentCompareName: '短期借款',
+}, {
+  id: 8,
+  name: '應付帳款',
+  compareName: '應收帳款',
+}, {
+  id: 9,
+  name: '長期負債',
+  compareName: '非流動負債',
+}, {
+  id: 10,
+  name: '流動負債',
+  compareName: '流動負債合計',
+}, {
+  id: 11,
+  name: '其他負債',
+  compareName: '其他非流動負債－其他',
+}];
+
+export const cashFlows = [{
+  id: 1,
+  name: '期初餘額',
+  compareName: '期初現金及約當現金餘額',
+}, {
+  id: 2,
+  name: '期末餘額',
+  compareName: '期末現金及約當現金餘額',
+}, {
+  id: 3,
+  name: '折舊',
+  compareName: '折舊費用',
+}, {
+  id: 4,
+  name: '攤銷',
+  compareName: '攤銷費用',
+}, {
+  id: 5,
+  name: '營業活動',
+  compareName: '營業活動之淨現金流入（流出）',
+}, {
+  id: 6,
+  name: '投資活動',
+  compareName: '投資活動之淨現金流入（流出）',
+}, {
+  id: 7,
+  name: '融資活動',
+  compareName: '籌資活動之淨現金流入（流出）',
+}, {
+  id: 8,
+  name: '其他活動',
+  compareName: '其他投資活動',
+}, {
+  id: 9,
+  name: '淨現金流',
+  compareName: '營運產生之現金流入（流出）',
+}, {
+  id: 10,
+  name: '自由現金流',
+  compareName: '繼續營業單位稅前淨利（淨損）',
+}];
+
+export const dividends = [{
+  id: 1,
+  name: '除權日',
+  compareName: '除權日',
+}, {
+  id: 2,
+  name: '除息日',
+  compareName: '除息日',
+}, {
+  id: 3,
+  name: '除權息前之股價',
+  compareName: '除權息前之股價',
+}, {
+  id: 4,
+  name: '現金股利',
+  compareName: '現金股利',
+}, {
+  id: 5,
+  name: '股票股利',
+  compareName: '股票股利',
+}];
+
+export const dividendYears = [{
+  id: 1,
+  year: 2018,
+}, {
+  id: 2,
+  year: 2017,
+}, {
+  id: 3,
+  year: 2016,
+}, {
+  id: 4,
+  year: 2015,
+}, {
+  id: 5,
+  year: 2014,
+}, {
+  id: 6,
+  year: 2013,
+}, {
+  id: 7,
+  year: 2012,
+}, {
+  id: 8,
+  year: 2011,
+}, {
+  id: 9,
+  year: 2010,
+}, {
+  id: 10,
+  year: 2009,
+}, {
+  id: 11,
+  year: 2008,
+}, {
+  id: 12,
+  year: 2007,
+}, {
+  id: 13,
+  year: 2006,
+}];
+
+export const months = [{
+  id: 1,
+  month: '2019-06',
+  season: 'Q2',
+}, {
+  id: 2,
+  month: '2019-03',
+  season: 'Q1',
+}, {
+  id: 3,
+  month: '2018-12',
+  season: 'Q4',
+}, {
+  id: 4,
+  month: '2018-09',
+  season: 'Q3',
+}, {
+  id: 5,
+  month: '2018-06',
+  season: 'Q2',
+}, {
+  id: 6,
+  month: '2018-03',
+  season: 'Q1',
+}, {
+  id: 7,
+  month: '2017-12',
+  season: 'Q4',
+}, {
+  id: 8,
+  month: '2017-09',
+  season: 'Q3',
+}, {
+  id: 9,
+  month: '2017-06',
+  season: 'Q1',
+}, {
+  id: 10,
+  month: '2017-03',
+  season: 'Q1',
+}, {
+  id: 11,
+  month: '2016-12',
+  season: 'Q4',
+}, {
+  id: 12,
+  month: '2016-09',
+  season: 'Q3',
+}, {
+  id: 13,
+  month: '2016-06',
+  season: 'Q2',
+}, {
+  id: 14,
+  month: '2016-03',
+  season: 'Q1',
+}, {
+  id: 15,
+  month: '2015-12',
+  season: 'Q4',
+}, {
+  id: 16,
+  month: '2015-09',
+  season: 'Q3',
+}, {
+  id: 17,
+  month: '2015-06',
+  season: 'Q2',
+}, {
+  id: 18,
+  month: '2015-03',
+  season: 'Q1',
+}, {
+  id: 19,
+  month: '2014-12',
+  season: 'Q4',
+}, {
+  id: 20,
+  month: '2014-09',
+  season: 'Q3',
+}, {
+  id: 21,
+  month: '2014-06',
+  season: 'Q2',
+}, {
+  id: 22,
+  month: '2014-03',
+  season: 'Q1',
+}, {
+  id: 23,
+  month: '2013-12',
+  season: 'Q4',
+}, {
+  id: 24,
+  month: '2013-09',
+  season: 'Q3',
+}, {
+  id: 25,
+  month: '2013-06',
+  season: 'Q2',
+}, {
+  id: 26,
+  month: '2013-03',
+  season: 'Q1',
+}];
+
+export default null;
