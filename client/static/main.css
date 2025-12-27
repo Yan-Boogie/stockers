@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans', 'Noto Sans CJK TC', sans-serif;
+  color: #FFF;
+}
+
+html, body {
+  padding: 0;
+  font-size: 16px;
+  margin: 0;
+  background-color: #000;
+  width: 100%;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+button {
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+#root {
+  height: 100vh;
+}
+
+/* ModuleGridUnit Item */
+
+.module-grid-unit.hovered {
+  background-color: #464646 !important;
+  font-weight: 500;
+  cursor: pointer !important;
+}
+
+.module-math-edit-handler.hovered {
+  opacity: 1 !important;
+  width: 100px !important;
+  height: 30px !important;
+  transition: opacity 0.2s ease-out;
+}
+
+/* Artibox Item */
+
+textarea.Artibox-input::-webkit-input-placeholder {
+  color: #DBDBDB;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+textarea.Artibox-input::-moz-placeholder {
+  color: #DBDBDB;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+textarea.Artibox-input::-ms-input-placeholder {
+  color: #DBDBDB;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+textarea.Artibox-input::placeholder {
+  color: #DBDBDB;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Math Module Item */
+
+input.math-module-input::selection {
+  background: transparent;
+}
+
+button.math-module-block-button.hovered {
+  color: #FF9500 !important;
+}
+
+span.math-module-text.selected {
+  color: #FF9500 !important;
+}
+
+/* Range Thumb */
+input[type=range] {
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  background-color: #4D2D00;
+  margin: 0;
+  height: 80px;
+  width: 300px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 80px;
+  width: 10px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  appearance: none;
+  height: 80px;
+  width: 10px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  appearance: none;
+  height: 80px;
+  width: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+@-webkit-keyframes autofill {
+  to {
+      color: #FFF;
+      background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
